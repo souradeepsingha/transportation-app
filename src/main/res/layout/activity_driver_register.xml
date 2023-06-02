@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverRegister"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your NAME"
+        android:id="@+id/name"
+        android:padding="10dp"
+        android:backgroundTint="#303030"
+        android:background="@drawable/border_locationedttxt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phon NO."
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Phon number"
+        android:id="@+id/phonnumber"
+        android:backgroundTint="#303030"
+        android:background="@drawable/border_locationedttxt"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Time"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:id="@+id/am_pm_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/am_pm_options" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/am_pm_radio_group1"
+            >
+
+            <!-- RadioButton for AM -->
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AM" />
+
+            <!-- RadioButton for PM -->
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:id="@+id/am_pm_spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/am_pm_options" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/am_pm_radio_group2"
+            >
+
+            <!-- RadioButton for AM -->
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AM" />
+
+            <!-- RadioButton for PM -->
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartingRoute"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <AutoCompleteTextView
+        android:hint="Search Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autocomplete"
+        android:backgroundTint="#303030"
+        android:background="@drawable/border_locationedttxt"
+        android:padding="10dp"
+        />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FinishRoute"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <AutoCompleteTextView
+        android:hint="Search Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autocomplete1"
+        android:backgroundTint="#303030"
+        android:background="@drawable/border_locationedttxt"
+        android:padding="10dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:id="@+id/register_button"
+        tools:ignore="InvalidId" />
+</LinearLayout>
